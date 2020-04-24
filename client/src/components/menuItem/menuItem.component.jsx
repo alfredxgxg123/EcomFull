@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { withRouter } from 'react-router-dom';
 
 const BackgroundImage = styled.div`
   width:100%;
@@ -65,9 +65,9 @@ const MenuItemStyle = styled.div`
 `;
 
 const MenuItem = ({
-  title, imageUrl, size, linkUrl,
+  title, imageUrl, size, linkUrl, history, match
 }) => (
-  <MenuItemStyle className={`${size} menu-item`}>
+  <MenuItemStyle className={`${size} menu-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
     <BackgroundImage
       style={{
         backgroundImage: `url(${imageUrl})`,
@@ -80,4 +80,4 @@ const MenuItem = ({
   </MenuItemStyle>
 );
 
-export default MenuItem;
+export default withRouter(MenuItem);
