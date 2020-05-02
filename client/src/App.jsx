@@ -1,23 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './pages/homePage/homePage.component.jsx';
-
-
-const HatsPage = (props) => {
-  console.log(props)
-  return (
-  <div>
-    <h1>hasts page</h1>
-  </div>
-  );
-};
+import ShopPage from './pages/shopPage/shop.component.jsx';
+import Header from './components/Header/Header.component.jsx';
 
 function App() {
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/shop/hats" component={HatsPage} />
+        <Route path="/shop" component={ShopPage} />
       </Switch>
     </div>
   );
