@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import DirectionMenu from './styles';
 import MenuItem from '../menuItem/menuItem.component.jsx';
 
 
-const DirectionMenu = styled.div`
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-`;
 
 const Directory = () => {
   const [sections, setSection] = useState([
