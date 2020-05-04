@@ -1,11 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
-import SignIn from '../../components/sign-in/sigin-in.component.jsx';
+import SignIn from '../../components/sign-in/sign-in.component.jsx';
+import SignUp from '../../components/sign-up/sign-up.component.jsx';
+import RegistrationStyle from './styles.js';
 
 const Registration = () => (
-  <div>
+  <RegistrationStyle>
       <SignIn />
-  </div>
+      <SignUp />
+  </RegistrationStyle>
 );
 
 export default Registration;
