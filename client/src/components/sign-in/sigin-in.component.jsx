@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FormInput from '../form-input/form-input.component.jsx'
 import SignInStyle from './styles';
+import CustomeButton from '../custom-button/customButton.component.jsx';
+import { signInWithGoogle } from '../../firebase/firebase';
 
 const SignIn = () => {
     const [signIn, setSignIn] = useState({
@@ -11,7 +13,6 @@ const SignIn = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-
         setSignIn({email: '', password: ''})
     }
 
@@ -22,7 +23,7 @@ const SignIn = () => {
             [name]: value 
         }))
     }
-    
+
     return(
         <SignInStyle>
             <h2>I already have an account</h2>
@@ -31,7 +32,10 @@ const SignIn = () => {
             <form onSubmit={handleSubmit} >
                 <FormInput name='email' type='email' label='email' value={email} handleChange={handleChange} required/>
                 <FormInput name='password' type='password' label='password' value={password} handleChange={handleChange} required/>
-                <input type='submit' value='Submit Form' />
+                <div className= "buttons">
+                    <CustomeButton type='submit'> Sign In </CustomeButton>
+                    <CustomeButton onClick={signInWithGoogle} isGoogleSignIn> Sign In with Google</CustomeButton>
+                </div>
             </form>
         </SignInStyle>
     )

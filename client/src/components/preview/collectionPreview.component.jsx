@@ -1,21 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CollectionItem from '../collectionItem/CollectionItem.component.jsx';
-
-const CollectionPreviewStyle = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-
-    .title {
-        font-size: 29px;
-        margin-bottom: 25px;
-    }
-    .preview {
-        display:flex;
-        justify-content: space-between;
-    }
-`;
+import CollectionPreviewStyle from './styles';
 
 
 const CollectionPreview = ({ title, items }) => (

@@ -1,8 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import BackgroundImage from './backgroundImage.style';
-import Content from './content.style';
-import MenuItemStyle from './styles';
+import { MenuItemStyle, Content, BackgroundImage } from './styles';
 
 const MenuItem = ({
   title, imageUrl, size, linkUrl, history, match
