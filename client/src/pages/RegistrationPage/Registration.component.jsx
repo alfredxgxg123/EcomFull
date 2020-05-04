@@ -5,8 +5,8 @@ import RegistrationStyle from './styles.js';
 
 const Registration = () => (
   <RegistrationStyle>
-      <SignIn />
-      <SignUp />
+    <SignIn />
+    <SignUp />
   </RegistrationStyle>
 );
 

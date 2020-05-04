@@ -8,43 +8,42 @@ import Registration from './pages/RegistrationPage/Registration.component.jsx';
 import { auth, createUserProfileDocument } from './firebase/firebase';
 
 const App = () => {
-
-  const [ user, setUser ] = useState({
-    currentUser: null
-  })
+  const [user, setUser] = useState({
+    currentUser: null,
+  });
   const { currentUser } = user;
   let unsubscribeFromAuth = null;
 
   useEffect(() => {
     // check if sign in or not by userAuth is null or has a user
-    unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+    unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         // if there is a userAuth, will fire to firebase to see if there is a doc
         const userRef = await createUserProfileDocument(userAuth);
         // constantly listening for the changes
-        userRef.onSnapshot(snapShot => {
+        userRef.onSnapshot((snapShot) => {
           setUser({
             currentUser: {
               id: snapShot.id,
-              ...snapShot.data()
-            }
-          })
-        })
+              ...snapShot.data(),
+            },
+          });
+        });
       } else {
         // set it to null
         setUser({
-          currentUser: userAuth
-        })
+          currentUser: userAuth,
+        });
       }
-    })
-    return () => { 
-      unsubscribeFromAuth() };
-  }, [])
-  console.log(user);
-  
+    });
+    return () => {
+      unsubscribeFromAuth();
+    };
+  }, []);
+
   return (
     <div>
-      <Header currentUser={currentUser}/>
+      <Header currentUser={currentUser} />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/shop" component={ShopPage} />
@@ -52,6 +51,6 @@ const App = () => {
       </Switch>
     </div>
   );
-}
+};
 
 export default App;

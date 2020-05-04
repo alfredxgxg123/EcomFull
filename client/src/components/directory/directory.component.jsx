@@ -3,7 +3,6 @@ import DirectionMenu from './styles';
 import MenuItem from '../menuItem/menuItem.component.jsx';
 
 
-
 const Directory = () => {
   const [sections, setSection] = useState([
     {

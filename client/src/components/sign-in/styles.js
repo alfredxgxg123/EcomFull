@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SignInStyle = styled.div `
+const SignInStyle = styled.div`
     width: 380px;
     display:flex;
     flex-direction: column;
@@ -16,4 +16,3 @@ const SignInStyle = styled.div `
 `;
 
 export default SignInStyle;
-
