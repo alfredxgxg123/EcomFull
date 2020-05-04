@@ -40,6 +40,7 @@ const App = () => {
       unsubscribeFromAuth();
     };
   }, []);
+  console.log(user);
 
   return (
     <div>

@@ -71,8 +71,8 @@ const showPageData = [
   },
   {
     id: 2,
-    title: 'Sneakers',
-    routeName: 'sneakers',
+    title: 'Shoes',
+    routeName: 'shoes',
     items: [
       {
         id: 10,
@@ -134,8 +134,8 @@ const showPageData = [
   },
   {
     id: 3,
-    title: 'Jackets',
-    routeName: 'jackets',
+    title: 'Shirts',
+    routeName: 'shirts',
     items: [
       {
         id: 18,

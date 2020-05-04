@@ -1,27 +1,24 @@
 import styled from 'styled-components';
 
 export const BackgroundImage = styled.div`
-  width:100%;
+  width: 100%;
   height: 100%;
   background-position: center;
   background-size: cover;
 `;
 
 export const Content = styled.div`
-  height: 90px;
+  height: 30px;
+  width: 100%;
   padding: 0 25px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   background-color: white;
   opacity: 0.7;
-  position: absolute;
   h1 {
       font-weight: bold;
-      margin-bottom: 6px;
-      font-size: 22px;
+      font-size: 20px;
       color: #4a4a4a;
   }
   span {
@@ -32,15 +29,24 @@ export const Content = styled.div`
 
 
 export const MenuItemStyle = styled.div`
-  min-width: 30%;
-  height: 240px;
   flex: 1 1 auto;
   display: flex;
+  flex-direction: column;
+  border-style: none;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   margin: 0 7.5px 15px;
   overflow: hidden;
+  height: 580px;
+  width: 25%;
+
+  @media only screen and (max-width: 1200px) {
+    width: 400px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 500px;
+  }
 
   &:hover {
     cursor: pointer;
@@ -53,15 +59,7 @@ export const MenuItemStyle = styled.div`
       opacity: 0.9;
     }
   }
-  &.large {
-    height: 380px;
-  }
-  &:first-child {
-    margin-right: 7.5px;
-  }
-  &:last-child {
-    margin-left: 7.5px;
-  }
+
 `;
 
 export default MenuItemStyle;
