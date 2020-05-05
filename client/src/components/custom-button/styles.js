@@ -15,7 +15,9 @@ const CustomButtonStyle = styled.button`
     font-weight: border;
     border: none;
     cursor: pointer;
-
+    display: flex;
+    justify-content: center;
+    
     &: hover {
         background-color: white;
         color: black;
@@ -28,6 +30,18 @@ const CustomButtonStyle = styled.button`
 
         &: hover {
             background-color: #357ae8;
+            border: none;
+        }
+    }
+
+    &.inverted {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+
+        &: hover {
+            background-color: black;
+            color: white;
             border: none;
         }
     }

@@ -6,6 +6,18 @@ const CollectionItemStyle = styled.div`
     flex-direction: column;
     height: 350px;
     align-items: center;
+    position relative;
+
+    &: hover {
+      .image {
+        opacity: 0.8;
+      }
+      
+      .custom-button {
+        opacity: 0.85;
+        display: flex;
+      }
+    }
 
     .image {
         width: 100%;
@@ -29,6 +41,14 @@ const CollectionItemStyle = styled.div`
       .price {
           width: 10%;
       }
+    }
+
+    .custom-button {
+        width: 80%;
+        opacity: 0.7;
+        position: absolute;
+        top: 255px;
+        display: none;
     }
 `;
 
