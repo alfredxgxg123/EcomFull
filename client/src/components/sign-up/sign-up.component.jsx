@@ -87,7 +87,7 @@ const SignUp = () => {
           label="Comfirm Password"
         />
 
-        <CustomeButton type="submit">SIGN UP</CustomeButton>
+        <CustomeButton type="submit" type="button">SIGN UP</CustomeButton>
       </form>
     </SignUpStyle>
   );

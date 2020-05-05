@@ -39,8 +39,8 @@ const SignIn = () => {
         <FormInput name="email" type="email" label="email" value={email} handleChange={handleChange} required />
         <FormInput name="password" type="password" label="password" value={password} handleChange={handleChange} required />
         <div className="buttons">
-          <CustomeButton type="submit"> Sign In </CustomeButton>
-          <CustomeButton onClick={signInWithGoogle} isGoogleSignIn> Sign In with Google</CustomeButton>
+          <CustomeButton type="submit" type="button"> Sign In </CustomeButton>
+          <CustomeButton type="button" onClick={signInWithGoogle} isGoogleSignIn> Sign In with Google</CustomeButton>
         </div>
       </form>
     </SignInStyle>
