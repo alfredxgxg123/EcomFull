@@ -4,10 +4,10 @@ EcomFull is a fullstack multi-page eCommerce application with React hooks and re
 
 ## Installation
 
-npm install
-npm run build
-npm start
-go to localhost:3000
+1. npm install
+2. npm start
+3. npm run build
+4. go to localhost:3000
 
 
 
