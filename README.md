@@ -12,7 +12,7 @@ EcomFull is a full-stack multi-page eCommerce application implemented with React
 
 ## Usage
 
-It could used as a boilerplate for an eCommerce shop idea.
+It could used as a boilerplate for any eCommerce shop idea.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
