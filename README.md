@@ -2,6 +2,21 @@
 
 EcomFull is a full-stack multi-page eCommerce application implemented with React hooks and redux-sage. It is an ongoing solo project with a target to implement a boilerplate for highly scalable, well distributed and reusable React.js based components such as Registration service, item listing service, and purchase cart service that could be applied to different web applications.
 
+
+## Tech Stack
+
+- JavaScript
+- Node.js
+- Express.js
+- React Hooks
+- Redux Saga
+- Styled-Components
+- Webpack
+- Babel
+- AWS service
+- Firebase Authentication
+
+
 ## Installation
 
 1. npm install
