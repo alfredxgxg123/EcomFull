@@ -13,11 +13,11 @@ const CartListStyle = styled.div`
   right: 60px;
   z-index: 10;
 
-  &.cartItems {
+  .cartItems {
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
   }
 
   button {
