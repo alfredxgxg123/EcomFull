@@ -9,7 +9,7 @@ EcomFull is a full-stack multi-page eCommerce application implemented with React
 - Node.js
 - Express.js
 - React Hooks
-- Redux Saga
+- Redux
 - reselect
 - Styled-Components
 - Webpack
