@@ -18,11 +18,17 @@ const CartListStyle = styled.div`
     display: flex;
     flex-direction: column;
     overflow: auto;
+
+    .empty {
+      font-size: 20px;
+      margin: 50px auto;
+    }
   }
 
   button {
     margin-top: auto;
   }
+
 `;
 
 export default CartListStyle;

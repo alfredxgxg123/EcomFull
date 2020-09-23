@@ -6,6 +6,9 @@ import { createStructuredSelector } from 'reselect';
 
 import HomePage from './pages/homePage/homePage.component.jsx';
 import ShopPage from './pages/shopPage/shop.component.jsx';
+import CheckoutPage from './pages/checkoutPage/checkout.component.jsx';
+
+
 import Header from './components/Header/Header.component.jsx';
 import Registration from './pages/RegistrationPage/Registration.component.jsx';
 import { auth, createUserProfileDocument } from './firebase/firebase';
@@ -42,9 +45,11 @@ const App = ({ setCurrentUser, currentUser }) => {
     <div>
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/shop" component={ShopPage} />
-        <Route path="/signin" render={() => currentUser ? <Redirect to = "/" /> : <Registration /> } />
+        <Route exact path='/' component={HomePage} />
+        <Route path='/shop' component={ShopPage} />
+        <Route exact path='/checkout' component={CheckoutPage} />
+        
+        <Route path='/signin' render={() => currentUser ? <Redirect to = '/' /> : <Registration /> } />
       </Switch>
     </div>
   );
