@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import HeaderStyle from './styles';
 import { auth } from '../../firebase/firebase';
 import CartIcon from '../cartIcon/cartIcon.component.jsx';
-import CartListStyle from '../cart/cartList.component.jsx';
+import CartList from '../cart/cartList.component.jsx';
 
 const Header = ({ currentUser, hidden }) => (
   <HeaderStyle>
@@ -24,7 +24,7 @@ const Header = ({ currentUser, hidden }) => (
       }
       <CartIcon />
     </div>
-    { hidden ? null : <CartListStyle /> }
+    { hidden ? null : <CartList /> }
   </HeaderStyle>
 );
 

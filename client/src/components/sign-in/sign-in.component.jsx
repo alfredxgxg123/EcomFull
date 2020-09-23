@@ -13,7 +13,6 @@ const SignIn = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     try {
       await auth.signInWithEmailAndPassword(email, password);
       setSignIn({ email: '', password: '' });
@@ -35,11 +34,11 @@ const SignIn = () => {
       <h2 className="title">I already have an account</h2>
       <span>Sign in with your email and password</span>
 
-      <form onSubmit={handleSubmit}>
+      <form>
         <FormInput name="email" type="email" label="email" value={email} handleChange={handleChange} required />
         <FormInput name="password" type="password" label="password" value={password} handleChange={handleChange} required />
         <div className="buttons">
-          <CustomeButton type="submit" type="button"> Sign In </CustomeButton>
+          <CustomeButton onClick={handleSubmit} type="button"> Sign In </CustomeButton>
           <CustomeButton type="button" onClick={signInWithGoogle} isGoogleSignIn> Sign In with Google</CustomeButton>
         </div>
       </form>

@@ -4,7 +4,6 @@ import 'firebase/firestore';
 import 'firebase/auth';
 import config from './config';
 
-
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   // if null ( meaning not sign in return null )
   if (!userAuth) return;

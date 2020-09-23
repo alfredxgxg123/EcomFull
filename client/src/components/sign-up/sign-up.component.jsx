@@ -20,7 +20,6 @@ const SignUp = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     if (password !== comfirmPassword) {
       alert("passwords don't match");
     }
@@ -57,7 +56,7 @@ const SignUp = () => {
       <h2 className="title">I do not have a account</h2>
       <span>Sign up with your email and password</span>
 
-      <form onSubmit={handleSubmit}>
+      <form>
         <FormInput
           type="text"
           name="displayName"
@@ -87,7 +86,7 @@ const SignUp = () => {
           label="Comfirm Password"
         />
 
-        <CustomeButton type="submit" type="button">SIGN UP</CustomeButton>
+        <CustomeButton onSubmit={handleSubmit} type="button">SIGN UP</CustomeButton>
       </form>
     </SignUpStyle>
   );
