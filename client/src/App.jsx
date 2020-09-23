@@ -2,6 +2,7 @@ import 'babel-polyfill';
 import React, { useEffect } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import HomePage from './pages/homePage/homePage.component.jsx';
 import ShopPage from './pages/shopPage/shop.component.jsx';
@@ -9,6 +10,7 @@ import Header from './components/Header/Header.component.jsx';
 import Registration from './pages/RegistrationPage/Registration.component.jsx';
 import { auth, createUserProfileDocument } from './firebase/firebase';
 import { setCurrentUser } from './redux/user/user.action';
+import { selectCurrentUser } from '../src/redux/user/user.selector';
 
 const App = ({ setCurrentUser, currentUser }) => {
   let unsubscribeFromAuth = null;
@@ -48,8 +50,8 @@ const App = ({ setCurrentUser, currentUser }) => {
   );
 };
 
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser
 })
 
 const mapDispatchToProps = dispatch => ({
