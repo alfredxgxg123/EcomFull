@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import showPageData from './dummyData.js';
+import React from 'react';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 import CollectionPreview from '../../components/preview/collectionPreview.component.jsx';
 
-const Shopage = (props) => {
-  const [collection, setCollection] = useState(
-    [showPageData],
-  );
+import { selectShopItems } from '../../redux/shop/shop.selector';
+
+
+const Shopage = ({ showPageData }) => {
   return (
     <div>
       {
@@ -17,4 +18,8 @@ const Shopage = (props) => {
   );
 };
 
-export default Shopage;
+const mapStateToProps = createStructuredSelector({
+  showPageData: selectShopItems
+})
+
+export default connect(mapStateToProps)(Shopage);
