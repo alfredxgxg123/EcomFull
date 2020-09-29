@@ -1,11 +1,16 @@
 import React from 'react';
 
-import CollectionOverview from '../../components/collections-overview.component/collections-overview.component.jsx';
+import { Route } from 'react-router-dom';
 
-const Shopage = () => {
+import CollectionOverview from '../../components/collections-overview.component/collections-overview.component.jsx';
+import ShopCateory from '../shopCategory/shopCategory.component.jsx'
+
+const Shopage = ({ match }) => {
+
   return (
     <div>
-      <CollectionOverview/>
+      <Route exact path={`${match.path}`} component={CollectionOverview}/>
+      <Route path={`${match.path}/:categoryId`} component={ShopCateory}/>
     </div>
   );
 };

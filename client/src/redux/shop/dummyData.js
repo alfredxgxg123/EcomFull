@@ -1,5 +1,5 @@
-const showPageData = [
-  {
+const showPageData = {
+  hats: {
     id: 1,
     title: 'Hats',
     routeName: 'hats',
@@ -60,10 +60,10 @@ const showPageData = [
       }
     ]
   },
-  {
+  shoes: {
     id: 2,
-    title: 'Sneakers',
-    routeName: 'sneakers',
+    title: 'Shoes',
+    routeName: 'shoes',
     items: [
       {
         id: 10,
@@ -115,10 +115,10 @@ const showPageData = [
       }
     ]
   },
-  {
+  shirts: {
     id: 3,
-    title: 'Jackets',
-    routeName: 'jackets',
+    title: 'Shirts',
+    routeName: 'Shirts',
     items: [
       {
         id: 18,
@@ -152,7 +152,7 @@ const showPageData = [
       }
     ]
   },
-  {
+  womens: {
     id: 4,
     title: 'Womens',
     routeName: 'womens',
@@ -201,7 +201,7 @@ const showPageData = [
       }
     ]
   },
-  {
+  mens: {
     id: 5,
     title: 'Mens',
     routeName: 'mens',
@@ -244,6 +244,6 @@ const showPageData = [
       }
     ]
   }
-];
+};
 
 export default showPageData;

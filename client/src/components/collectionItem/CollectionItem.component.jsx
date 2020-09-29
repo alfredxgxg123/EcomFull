@@ -11,7 +11,7 @@ const CollectionItem = ({
 }) => {
   const { id, name, price, imageUrl } = item;
   return (
-    <CollectionItemStyle>
+    <CollectionItemStyle className="item">
       <div
         className="image"
         style={{

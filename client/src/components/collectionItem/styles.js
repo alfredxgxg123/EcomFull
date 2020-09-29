@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 const CollectionItemStyle = styled.div`
-    width: 22%;
+    width: 22vw;
     display: flex;
     flex-direction: column;
     height: 350px;
     align-items: center;
     position relative;
+    margin-right: 25px;
 
     &: hover {
       .image {

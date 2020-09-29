@@ -6,17 +6,18 @@ const INITAL_STATE = {
       id: 1,
       linkUrl: 'shop/hats',
     },
-    {
-      title: 'shirts',
-      imageUrl: 'https://pcituress.s3-us-west-1.amazonaws.com/t-shirt-store.jpg',
-      id: 2,
-      linkUrl: 'shop/shirts',
-    },
+
     {
       title: 'shoes',
       imageUrl: 'https://pcituress.s3-us-west-1.amazonaws.com/loafers-leaning-along-white-wall.jpg',
-      id: 3,
+      id: 2,
       linkUrl: 'shop/shoes',
+    },
+    {
+      title: 'shirts',
+      imageUrl: 'https://pcituress.s3-us-west-1.amazonaws.com/t-shirt-store.jpg',
+      id: 3,
+      linkUrl: 'shop/shirts',
     },
     {
       title: 'womens',
