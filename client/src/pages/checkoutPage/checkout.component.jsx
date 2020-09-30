@@ -36,9 +36,9 @@ const CheckoutPage = ({cartItems, total}) => (
       <span>Total: ${total}</span>
     </div>
     <div className='testing'>
-      Testing Card number can be found here <a href="https://stripe.com/docs/testing#cards">Strip link</a>
+      Testing Card number: <a>4242 4242 4242 4242</a>
       <br />
-      Exp: 12/99 - CVV:111
+      Exp: 01/21 - CVV:111
     </div>
     <StripeCheckoutButton price={total}/>
   </CheckOutPageStyle>

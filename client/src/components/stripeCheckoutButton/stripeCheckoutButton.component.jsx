@@ -6,7 +6,7 @@ import StripeCheckout from 'react-stripe-checkout';
 const StripeCheckoutButton = ({ price }) => {
   const convertPrice = price * 100;
   const pubishableKey = StripeConfig.pubishableKey;
-  console.log(process.env)
+
   const onSuccessCallback = token => {
     alert('Payment Successful')
   }
