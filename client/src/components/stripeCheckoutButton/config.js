@@ -1,5 +1,5 @@
 const StripeConfig = {
-  pubishableKey: "your key here",
+  pubishableKey: process.env.PUBLISHABLE_KEY,
 };
 
 export default StripeConfig;

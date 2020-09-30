@@ -2,5 +2,5 @@
 package-lock.json
 node_modules
 bundle.js
-config.js
+
 config.env
