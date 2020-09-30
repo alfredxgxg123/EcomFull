@@ -1,5 +1,7 @@
 # EcomFull
 
+link: https://ecomfull.herokuapp.com/
+
 EcomFull is a full-stack multi-page eCommerce application implemented with React hooks and redux. It is an ongoing solo project with a target to implement a boilerplate for highly scalable, well distributed and reusable React.js based components such as Registration service, item listing service, and purchase cart service that could be applied to different web applications.
 
 
@@ -21,9 +23,16 @@ EcomFull is a full-stack multi-page eCommerce application implemented with React
 ## Installation
 
 1. npm start
+
+#### or 
+
+1. npm install, npm run buildDev, npm run startDev
+
+
 2. go to localhost:3000
-3. you have to register for a new firebase auth acct inorder to run the registration comp
-4. go to client/src/firebase/ rename config.js.EXAMPLE to config.js and add your own firebase config
+3. you have create your own stripe and firebase acc in order to make the payment and registration method to make
+4. once yoo created your accounts, go rename hte config.env.EXAMPLE to config.env and input all the configs
+
 
 ## Usage
 
