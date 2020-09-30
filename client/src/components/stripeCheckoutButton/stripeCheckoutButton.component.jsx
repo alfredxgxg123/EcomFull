@@ -8,7 +8,6 @@ const StripeCheckoutButton = ({ price }) => {
   const pubishableKey = StripeConfig.pubishableKey;
   console.log(process.env)
   const onSuccessCallback = token => {
-    console.log(token);
     alert('Payment Successful')
   }
 
