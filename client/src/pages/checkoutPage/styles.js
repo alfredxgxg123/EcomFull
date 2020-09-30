@@ -7,6 +7,18 @@ const CheckOutPageStyle = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
+  
+  .testing {
+    text-align : center;
+    margin-top: 40px;
+    font-size: 24px;
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+  }
+
 
   .total {
     margin-top: 30px;
@@ -14,6 +26,10 @@ const CheckOutPageStyle = styled.div`
     font-size: 36px;
   }
   
+  button {
+    margin-left: auto;
+    margin-top: 50px;
+  }
   .header {
     width: 100%;
     padding: 10px 0;

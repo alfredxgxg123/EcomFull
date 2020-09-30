@@ -1,0 +1,5 @@
+const StripeConfig = {
+  pubishableKey: "your key here",
+};
+
+export default StripeConfig;
