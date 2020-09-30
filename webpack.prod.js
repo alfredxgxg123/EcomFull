@@ -1,4 +1,7 @@
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const webpack = require('webpack');
+
 require('dotenv').config();
 
 module.exports = {
@@ -49,5 +52,15 @@ module.exports = {
         },
       },
     ],
+  },
+  optimization: {
+    minimizer: [new UglifyJsPlugin({ 
+            uglifyOptions: {
+                mangle: true,
+                output: {
+                    comments: false
+                }
+            }
+       })]
   },
 };
