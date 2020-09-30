@@ -7,11 +7,13 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'client/dist'),
   },
-  // plugins: [
-  //   new Dotenv({
-  //     path:'./config.env'
-  //   })
-  // ],
+  plugins: [
+    new Dotenv({
+      path:'./config.env',
+      defaults: false
+    })
+  ],
+  target: 'node',
   module: {
     rules: [
       {
