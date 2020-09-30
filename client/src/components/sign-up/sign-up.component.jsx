@@ -86,7 +86,7 @@ const SignUp = () => {
           label="Comfirm Password"
         />
 
-        <CustomeButton onSubmit={handleSubmit} type="button">SIGN UP</CustomeButton>
+        <CustomeButton onClick={handleSubmit} type="button">SIGN UP</CustomeButton>
       </form>
     </SignUpStyle>
   );
