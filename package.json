@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "startDev": "NODE_ENV=development nodemon server/index.js",
-    "buildDev": "webpack -d --watch",
+    "buildDev": "webpack --env=dev -d --watch",
     "startPro": "NODE_ENV=production node server/index.js",
-    "buildPro": "webpack",
+    "buildPro": "webpack --env=prod",
     "start": "NODE_ENV=production npm install && npm run buildPro && npm run startPro"
   },
   "author": "",
