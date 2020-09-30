@@ -20,12 +20,10 @@ EcomFull is a full-stack multi-page eCommerce application implemented with React
 
 ## Installation
 
-1. npm install
-2. npm start
-3. npm run build
-4. go to localhost:3000
-5. you have to register for a new firebase auth acct inorder to run the registration comp
-6. go to client/src/firebase/ rename config.js.EXAMPLE to config.js and add your own firebase config
+1. npm start
+2. go to localhost:3000
+3. you have to register for a new firebase auth acct inorder to run the registration comp
+4. go to client/src/firebase/ rename config.js.EXAMPLE to config.js and add your own firebase config
 
 ## Usage
 
