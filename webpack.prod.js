@@ -54,13 +54,21 @@ module.exports = {
     ],
   },
   optimization: {
-    minimizer: [new UglifyJsPlugin({ 
-            uglifyOptions: {
-                mangle: true,
-                output: {
-                    comments: false
-                }
-            }
-       })]
+    minimize: true,
+    minimizer: [new UglifyJsPlugin({
+      uglifyOptions: {
+        mangle:true,
+        output: {
+          comments: false
+        }
+      },
+      sourceMap: true,
+      exclude: [/\.min\.js$/gi]
+    })]
   },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+}
 };
